@@ -1,29 +1,21 @@
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom';
 import FooterComponent from './Components/FooterComponent';
-import FormComponent from './Components/FormComponent';
-import ImageComponent from './Components/ImageComponent';
-import ListComponent from './Components/ListComponent';
+import NewsletterPage from './Pages/NewsletterPage';
+import SuccessPage from './Pages/SuccessPage';
 
 function App() {
   return (
     <>
-      <div className="main-container">
-        {/* Sign-up form start */}
-        <div className="form-left">
-          <h1 className="header">Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-
-          {/* ListItems */}
-          <ListComponent />
-
-          {/* Form */}
-          <FormComponent />
-        </div>
-
-        {/* Image */}
-        <ImageComponent />
-        {/* <!-- Sign-up form end --> */}
-      </div>
-
+      <Router>
+        <Routes>
+          <Route path='/' element={<NewsletterPage />} />
+          <Route path='/success' element={<SuccessPage />} />
+        </Routes>
+      </Router>
       {/* Footer */}
       <FooterComponent />
     </>

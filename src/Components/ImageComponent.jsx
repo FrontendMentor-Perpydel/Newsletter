@@ -1,10 +1,11 @@
 import illustrationDesktop from '../assets/images/illustration-sign-up-desktop.svg';
 import illustrationMobile from '../assets/images/illustration-sign-up-mobile.svg';
+import styles from '../styles/ImageComponent.module.css';
 
 const ImageComponent = () => {
   return (
     <>
-      <div className="desktop-image hidden">
+      <div className={styles.desktopImage}>
         {/* Desktop image */}
         <img
           src={illustrationDesktop}
@@ -14,7 +15,7 @@ const ImageComponent = () => {
         />
       </div>
       {/* Mobile Image */}
-      <div className="mobile-image hidden">
+      <div className={styles.mobileImage}>
         <img
           src={illustrationMobile}
           alt="Mobile Image"

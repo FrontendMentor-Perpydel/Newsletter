@@ -1,0 +1,41 @@
+.listItems {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.listItems li {
+  list-style: none;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875em;
+  font-size: 14px;
+}
+
+.listItems li img {
+  width: 15px;
+}
+
+@media (min-width: 1040px) {
+
+  .listItems li {
+    align-items: center;
+  }
+}
+
+@media (min-width: 2560px) {
+  .listItems {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .listItems li {
+    font-size: 2rem;
+  }
+
+  .listItems li img {
+    width: 30px;
+  }
+}

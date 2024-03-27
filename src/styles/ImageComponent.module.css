@@ -1,0 +1,41 @@
+.mobileImage,
+.mobileImage img {
+  width: 100%;
+}
+
+.desktopImage {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktopImage {
+    width: 70%;
+  }
+
+  .desktopImage img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desktopImage {
+    display: flex;
+  }
+
+  .mobileImage {
+    display: none;
+  }
+}
+
+@media (min-width: 1040px) {
+  .desktopImage {
+    width: 50%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .desktopImage img {
+    width: 95%;
+    height: auto;
+    margin: 30px 0px;
+  }
+}
