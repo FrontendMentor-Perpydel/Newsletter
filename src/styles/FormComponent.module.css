@@ -23,12 +23,12 @@
 
 .submitBtn {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   background-color: var(--inactive-btn-color);
   color: var(--light-color);
   font-weight: var(--bold-weight);
-  transition: transform 0.5s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
   margin: 10px 0;
   border: none;
   outline: none;

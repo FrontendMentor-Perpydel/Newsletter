@@ -17,7 +17,7 @@
   width: 15px;
 }
 
-@media (min-width: 1040px) {
+@media (min-width: 1024px) {
 
   .listItems li {
     align-items: center;
