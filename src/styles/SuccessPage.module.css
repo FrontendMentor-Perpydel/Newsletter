@@ -44,6 +44,11 @@
     border-radius: 20px;
   }
 
+  .dismissBtn:hover {
+    background-color: var(--secondary-color);
+    box-shadow: var(--active-glow);
+  }
+
   .dismissBtn {
     margin: 30px 0 10px;
   }
