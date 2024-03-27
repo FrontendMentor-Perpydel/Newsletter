@@ -69,13 +69,15 @@ function App() {
         </div>
         {/* <!-- Sign-up form end --> */}
       </div>
-      <div className="attribution">
+
+      {/* Footer */}
+      <footer className="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Your Name Here</a>.
-      </div>
+        . Coded by <a href="https://github.com/Perpy-del">Perpetual Meninwa</a>.
+      </footer>
     </>
   );
 }
