@@ -1,7 +1,7 @@
-import FooterComponent from '../Components/FooterComponent';
-import FormComponent from '../Components/FormComponent';
-import ImageComponent from '../Components/ImageComponent';
-import ListComponent from '../Components/ListComponent';
+import FooterComponent from '../components/FooterComponent';
+import FormComponent from '../components/FormComponent';
+import ImageComponent from '../components/ImageComponent';
+import ListComponent from '../components/ListComponent';
 
 const NewsletterPage = () => {
   return (

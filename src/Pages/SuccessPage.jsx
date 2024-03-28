@@ -1,7 +1,10 @@
 import iconSuccess from '../assets/images/icon-success.svg';
 import styles from '../styles/SuccessPage.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const SuccessPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.successContainer}>
       {/* <!-- Success message start --> */}
@@ -20,7 +23,7 @@ const SuccessPage = () => {
           </p>{' '}
         </div>
       </div>
-      <button className={styles.dismissBtn}>Dismiss message</button>
+      <button className={styles.dismissBtn} onClick={() => navigate('/')}>Dismiss message</button>
       {/* <!-- Success message end --> */}
     </div>
   );

@@ -3,9 +3,9 @@ import {
   Route,
   Routes,
 } from 'react-router-dom';
-import FooterComponent from './Components/FooterComponent';
-import NewsletterPage from './Pages/NewsletterPage';
-import SuccessPage from './Pages/SuccessPage';
+import FooterComponent from './components/FooterComponent';
+import NewsletterPage from './pages/NewsletterPage';
+import SuccessPage from './pages/SuccessPage';
 
 function App() {
   return (
