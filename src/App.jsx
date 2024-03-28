@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import FooterComponent from './components/layout/FooterComponent';
+// import FooterComponent from './components/layout/FooterComponent';
 import NewsletterPage from './pages/NewsletterPage';
 import SuccessPage from './pages/SuccessPage';
 import NewsletterContextProvider from './context/NewsletterContext';
@@ -15,7 +15,7 @@ function App() {
           </Routes>
         </NewsletterContextProvider>
       </Router>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
     </>
   );
 }
