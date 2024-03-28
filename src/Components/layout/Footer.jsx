@@ -1,6 +1,6 @@
 import styles from '../../styles/FooterComponent.module.css';
 
-const FooterComponent = () => {
+const Footer = () => {
   return (
     <>
       <footer className={styles.attribution}>
@@ -14,4 +14,4 @@ const FooterComponent = () => {
   );
 };
 
-export default FooterComponent;
+export default Footer;

@@ -3,7 +3,7 @@ import styles from '../styles/SuccessPage.module.css';
 import { useNavigate } from 'react-router-dom';
 import { useNewsletterHook } from '../hooks/useNewsletterHook';
 
-const SuccessPage = () => {
+const Success = () => {
   const { email, setEmail } = useNewsletterHook();
   
   const navigate = useNavigate();
@@ -37,4 +37,4 @@ const SuccessPage = () => {
   );
 };
 
-export default SuccessPage;
+export default Success;

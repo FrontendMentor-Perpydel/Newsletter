@@ -1,22 +1,22 @@
 import { Route, Routes } from 'react-router-dom';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import FooterComponent from './components/layout/FooterComponent';
-import NewsletterPage from './pages/NewsletterPage';
-import SuccessPage from './pages/SuccessPage';
+import Newsletter from './pages/Newsletter';
+import Success from './pages/Success';
 import NewsletterContextProvider from './context/NewsletterContext';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
     <>
       {/* <Router> */}
-        <NewsletterContextProvider>
-          <Routes>
-            <Route path="/" element={<NewsletterPage />} />
-            <Route path="/success" element={<SuccessPage />} />
-          </Routes>
-        </NewsletterContextProvider>
+      <NewsletterContextProvider>
+        <Routes>
+          <Route path="/" element={<Newsletter />} />
+          <Route path="/success" element={<Success />} />
+        </Routes>
+      </NewsletterContextProvider>
       {/* </Router> */}
-      <FooterComponent />
+      <Footer />
     </>
   );
 }

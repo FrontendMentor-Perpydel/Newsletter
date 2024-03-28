@@ -1,9 +1,9 @@
-import FooterComponent from '../components/layout/FooterComponent';
+import FooterComponent from '../components/layout/Footer';
 import FormComponent from '../components/FormComponent';
 import ImageComponent from '../components/ImageComponent';
 import ListComponent from '../components/ListComponent';
 
-const NewsletterPage = () => {
+const Newsletter = () => {
   return (
     <>
       <div className="main-container">
@@ -30,4 +30,4 @@ const NewsletterPage = () => {
   );
 };
 
-export default NewsletterPage;
+export default Newsletter;
