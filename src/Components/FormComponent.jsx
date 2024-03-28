@@ -1,48 +1,20 @@
-import { useRef, useState } from 'react';
+import { useRef } from 'react';
 import styles from '../styles/FormComponent.module.css';
 import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNewsletterHook } from '../hooks/useNewsletterHook';
+// import { useNavigate } from 'react-router-dom';
 
 const FormComponent = () => {
   const inputRef = useRef(null);
-  const [email, setEmail] = useState('');
-  const [emailEmpty, setEmailEmpty] = useState(false);
-  const [emailInvalid, setEmailInvalid] = useState(false);
-  const [emailValidColor, setEmailValidColor] = useState(false);
 
-  const navigate = useNavigate();
-
-  const validateEmail = email => {
-    const emailValidate = /^[a-zA-Z0-9. _%-]+@[a-zA-Z0-9. -]+\.[a-zA-Z]{2,4}$/;
-    return emailValidate.test(email);
-  };
-
-  const handleEmail = e => {
-    setEmail(e.target.value);
-  };
-
-  const handleSubmit = e => {
-    e.preventDefault();
-
-    if (email === '') {
-      console.log('Email validation one failed');
-      setEmailInvalid(false);
-      setEmailEmpty(true);
-      setEmailValidColor(true);
-    } else if (!validateEmail(email)) {
-      console.log('Email validation two failed', validateEmail(email), email);
-      setEmailEmpty(false);
-      setEmailInvalid(true);
-      setEmailValidColor(true);
-    } else {
-      console.log('PASSED ALL IFS');
-      setEmailEmpty(false);
-      setEmailInvalid(false);
-      setEmailValidColor(false);
-      localStorage.setItem('email', email);
-      navigate('/success');
-    }
-  };
+  const {
+    email,
+    emailEmpty,
+    emailInvalid,
+    emailValidColor,
+    handleEmail,
+    handleSubmit,
+  } = useNewsletterHook();
 
   useEffect(() => {
     inputRef.current?.focus();
